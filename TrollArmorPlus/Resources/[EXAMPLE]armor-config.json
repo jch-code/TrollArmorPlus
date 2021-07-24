@@ -1,0 +1,121 @@
+﻿[
+  {
+    "NewPrefabName": "ArmorRedTrollLeatherChest",
+    "SourcePrefabName": "ArmorTrollLeatherChest",
+    "DisplayName": "Red Troll Leather Tunic",
+    "ArmorType": "tunic",
+    "Color": {
+      "Red": 255,
+      "Green": 1,
+      "Blue": 1
+    },
+
+    "CraftingStation": "piece_workbench",
+    "MaxUpgradeQuality": 4,
+
+    "StartingArmor": 14,
+    "ArmorUpdgradePerLevel": 2,
+    "UseOriginalRecipe": true,
+
+    "StartingDurability": 1200,
+    "DurabilityUpgradePerLevel": 200,
+
+    "AdditionalRecipeRequirements": [
+      {
+        "RequirementPrefabName": "Iron",
+        "RequirementAmount": "10",
+        "RequirementAmountMorePerLevel": "5"
+      }
+    ]
+  },
+
+  {
+    "NewPrefabName": "ArmorRedTrollLeatherLegs",
+    "SourcePrefabName": "ArmorTrollLeatherLegs",
+    "DisplayName": "Red Troll Leather Pants",
+    "ArmorType": "legs",
+    "Color": {
+      "Red": 255,
+      "Green": 1,
+      "Blue": 1
+    },
+
+    "CraftingStation": "piece_workbench",
+    "MaxUpgradeQuality": 4,
+    "UseOriginalRecipe": true,
+
+    "StartingArmor": 14,
+    "ArmorUpdgradePerLevel": 2,
+
+    "StartingDurability": 1200,
+    "DurabilityUpgradePerLevel": 200,
+
+    "AdditionalRecipeRequirements": [
+      {
+        "RequirementPrefabName": "Iron",
+        "RequirementAmount": "10",
+        "RequirementAmountMorePerLevel": "5"
+      }
+    ]
+  },
+
+  {
+    "NewPrefabName": "CapeRedTrollHide",
+    "SourcePrefabName": "CapeTrollHide",
+    "DisplayName": "Red Troll Hide Cape",
+    "ArmorType": "cape",
+    "Color": {
+      "Red": 255,
+      "Green": 1,
+      "Blue": 1
+    },
+
+    "CraftingStation": "piece_workbench",
+    "MaxUpgradeQuality": 4,
+    "UseOriginalRecipe": true,
+
+    "StartingArmor": 14,
+    "ArmorUpdgradePerLevel": 2,
+
+    "StartingDurability": 1200,
+    "DurabilityUpgradePerLevel": 200,
+
+    "AdditionalRecipeRequirements": [
+      {
+        "RequirementPrefabName": "Iron",
+        "RequirementAmount": "10",
+        "RequirementAmountMorePerLevel": "5"
+      }
+    ]
+  },
+
+  {
+    "NewPrefabName": "HelmetRedTrollLeather",
+    "SourcePrefabName": "HelmetTrollLeather",
+    "DisplayName": "Red Troll Leather Helmet",
+    "ArmorType": "hood",
+    "Color": {
+      "Red": 255,
+      "Green": 1,
+      "Blue": 1
+    },
+
+    "CraftingStation": "piece_workbench",
+    "MaxUpgradeQuality": 4,
+    "UseOriginalRecipe": true,
+
+    "StartingArmor": 14,
+    "ArmorUpdgradePerLevel": 2,
+
+    "StartingDurability": 1200,
+    "DurabilityUpgradePerLevel": 200,
+
+    "AdditionalRecipeRequirements": [
+      {
+        "RequirementPrefabName": "Iron",
+        "RequirementAmount": "10",
+        "RequirementAmountMorePerLevel": "5"
+      }
+    ]
+  }
+]
