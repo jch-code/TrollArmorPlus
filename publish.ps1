@@ -13,7 +13,10 @@ param(
     [System.String]$ValheimPath,
 
     [Parameter(Mandatory)]
-    [System.String]$ProjectPath
+    [System.String]$ProjectPath,
+
+    [Parameter(Mandatory)]
+    [System.String]$SolutionPath
 )
 
 # Make sure Get-Location is the script path
@@ -65,7 +68,7 @@ if($Target.Equals("Release")) {
     Write-Host "$PackagePath\$TargetAssembly"
     New-Item -Type Directory -Path "$PackagePath\plugins" -Force
     Copy-Item -Path "$TargetPath\$TargetAssembly" -Destination "$PackagePath\plugins\$TargetAssembly"
-    Copy-Item -Path "$PackagePath\README.md" -Destination "$ProjectPath\README.md"
+    Copy-Item -Path "$PackagePath\README.md" -Destination "$SolutionPath\README.md"
     Compress-Archive -Path "$PackagePath\*" -DestinationPath "$TargetPath\$TargetAssembly.zip" -Force
 }
 

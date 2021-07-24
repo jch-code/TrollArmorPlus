@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrollArmorPlus", "TrollArmorPlus\TrollArmorPlus.csproj", "{8C1B7202-CDE5-446E-A75D-CC868E254DEA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Tools", "Build Tools", "{4C4B0704-FB0C-4AA7-89D7-ED995E9F29BA}"
+	ProjectSection(SolutionItems) = preProject
+		DoPrebuild.props = DoPrebuild.props
+		Environment.props = Environment.props
+		publish.ps1 = publish.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
