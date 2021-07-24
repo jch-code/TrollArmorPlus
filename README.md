@@ -1,11 +1,10 @@
 ﻿# Valheim Custom Troll Armor
-This mod is a re-created based off of [Rainbow Troll Armor Generator](https://www.nexusmods.com/valheim/mods/1309) by Nexus Mods user [@Astafraios](https://www.nexusmods.com/valheim/users/33749005).
-
-Using the armor-config.json, TrollArmorPlus will generate new Troll Armor pieces on load with custom stats, color, and recipes.
+This mod is a re-creation based off of [Rainbow Troll Armor Generator](https://www.nexusmods.com/valheim/mods/1309) by Nexus Mods user [@Astafraios](https://www.nexusmods.com/valheim/users/33749005). All credit to **Astafraios** for the original implementation. I decided to re-create the mod so I could extend however I wanted to in the future.
 
 ## Features
 
 ### Armor Config
+Using the armor-config.json, TrollArmorPlus will generate new Troll Armor pieces on load with custom stats, color, and recipes.
 Each entry in armor-config.json requires following preoperties
 
 
@@ -45,7 +44,21 @@ Each entry in armor-config.json requires following preoperties
   - How much durability this item gains from an upgrade at the crafting station
 - AdditionalRecipeRequirements
   - JSON array containing JSON objects with recipe requirement data.
-  - ***The recipe can only contain a maximum of four total items.***
+    ```
+      [
+        {
+          "RequirementPrefabName" :"Iron",
+          "RequirementAmount" : "10",
+          "RequirementAmountMorePerLevel" : "5"
+        },
+        {
+          "RequirementPrefabName" :"Flint",
+          "RequirementAmount" : "15",
+          "RequirementAmountMorePerLevel" : "3"
+        }
+      ]
+    ```
+  - ***The recipe can only contain a maximum of four total requirements***
     - E.g. If the original recipe is being used and has two standard requirements, you can only add 2 more additional requirements. The mod will ignore any more requirements after hitting the limit.
 
 Example of an entry in `armor-config.json`.
@@ -88,7 +101,8 @@ Example of an entry in `armor-config.json`.
 ***[Full prefab list available here](https://valheim-modding.github.io/Jotunn/data/prefabs/prefab-list.html)***
 
 ## Usage
-This project was built with the Jötunn Mod Stub project so it benefits from the standard pre/post build auutomations.
+This project was built with the Jötunn Mod Stub project so it benefits from the standard pre/post build automations.
+More info can be found [here](https://valheim-modding.github.io/Jotunn/guides/guide.html?tabs=tabid-4)
 
 ### Building Debug
 - The compiled dll file for this project is copied to `<ValheimDir>\BepInEx\plugins`.
